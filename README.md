@@ -9,7 +9,10 @@ The technique stack is MEAN Stack, which represents for  "MongoDB", "Express", "
 Currently, we have already implement a template front end design and a backend for register and login functions. The frontend is implemented with Angular 2. For our backend, we implemented it in Node.js with Express and MongoDB.
   
 _Front End:_  
-Our front end design is currently implemented with Angular 2. For now, our interface design contains mainly three parts, 1) The information pages that provide various resources and information that users might need, including locations of Family Justice Centers, testimonials, technology tips for using the app safely, etc. 
+Our front end design is currently implemented with Angular 2. For now, our interface design contains mainly three parts,
+
+1) The information pages that provide various resources and information that users might need, including locations of Family Justice Centers, testimonials, technology tips for using the app safely, etc. 
+
 2) The OCDV portal that users can log in, upload and manage their records of incidences, evidences of being abused, and keep track of their court days, etc. The portal is not fully functional yet within the newly deployed version on AWS. We'll fix that soon.
 
 3) Escape button: This function is to help users quickly close our website without any trace in case the abusers suddenly come. By clicking this button, user will be redirected to a new tab and redirects the old page to google to hide the browsing history.
