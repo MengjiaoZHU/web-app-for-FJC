@@ -1,3 +1,283 @@
-<p>
-  tour works!
-</p>
+
+<!-- links-->
+<!-- <a [routerLink]="['tour']" fragment="Test">Jump to 'Test' anchor </a> -->
+
+
+
+
+
+<!--                          -->
+<div class="below-slideshow">
+         <div class="container" style="max-height: 95px;">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="txt-block">
+									<h1 class="head-line">{{ title }}    </h1>
+                      </div>
+            </div>
+        </div>
+
+          </div>
+</div>
+
+
+     <!-- BELOW SLIDESHOW SECTION END-->
+
+    <div class="container">
+      <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+           <h1 class="tag-home">  {{ subtitle }}
+              <a href=" /service_offered"  ><strong> {{ linkSubtitle }} </strong></a> {{ subtitle_}}</h1>
+             <hr />
+               </div>
+          </div>
+        </div>
+
+       <!-- TAG HOME SECTION END-->
+
+
+    <div class="just-sec" id="port-folio">
+
+
+        <div class="container">
+
+            <div class="row " >
+                <!--  <ul id="filters" >
+						<li><span class="filter active" data-filter="landscape nature awesome">All </span></li>
+						<li><span class="filter active">/</span></li>
+						<li><span class="filter" data-filter="landscape">Landscape</span></li>
+						<li><span class="filter">/</span></li>
+						<li><span class="filter" data-filter="nature">Nature</span></li>
+						<li><span class="filter">/</span></li>
+						<li><span class="filter" data-filter="awesome">Awesome</span></li>
+					</ul>
+        -->
+        <div class="col-md-4 ">
+          <h4 align='center'>Bronx</h4>
+              <div class="portfolio-item awesome mix_all" data-cat="awesome" >
+                  <img style='height: 100%; width: 100%; object-fit: contain' src="assets/img/tour/bronx.jpg" alt="" />
+                  <div class="overlay">
+
+                      <p>
+                          198 E 161st St, Bronx, NY 10451
+                          <br>(718) 508-1222
+                          <br>
+                          <br><strong>Hours of Operation:</strong>
+                          <br>Monday through Friday
+                          <br>9:00 a.m. - 5:00 p.m.
+                          <br>
+                          <br><strong> Transportation</strong>
+                          <br>Subway: 4 B D to Yankee Stadium
+                          <br>Bus: BX1, BX2, BX6, and BX13
+                          <br> 
+                          <br><a (click)= "navigateBronx()" > | Virtual Tour |</a> <a [routerLink]= "['bronx']"></a>
+                          </p>
+
+<!--                           <a href="components/bronx/bronx.html"><h4>Virtual Tour</h4></a>
+ -->                          
+                    
+                      
+                      <!--
+                      <a class="preview btn btn-info " title="Image Title Here" href="assets/img/portfolio/g.jpg"><i class="fa fa-plus fa-2x"></i></a>
+                    -->
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-md-4 ">
+          <h4 align='center'>Brooklyn</h4>
+              <div class="portfolio-item awesome mix_all" data-cat="awesome" >
+
+                  <img style='height: 100%; width: 100%; object-fit: contain' src="assets/img/tour/brooklyn.jpg" class="img-responsive " alt="" />
+                  <div class="overlay">
+                      <p>
+                          350 Jay St, Brooklyn, NY 11201
+                          <br>(718) 250-5111 and select 6
+                          <br>
+                          <br><strong>Hours of Operation:</strong>
+                          <br>Monday through Friday
+                          <br>9:00 a.m. - 5:00 p.m.
+                          <br>
+                          <br><strong> Transportation</strong>
+                          <br>Subway: A C F R to Jay Street or 2 3 4 5 to Borough Hall 
+                          <br>Bus: B25, B26, B38, B54, B57, B61, B62, B65, B67, B75, and B103
+                          <br>
+                          <br> <a (click)= "navigateBrooklyn()"> | Virtual Tour |</a> <a [routerLink]= "['brooklyn']"></a>
+                           </p>                  
+                     
+                      <!--
+                      <a class="preview btn btn-info " title="Image Title Here" href="assets/img/portfolio/g.jpg"><i class="fa fa-plus fa-2x"></i></a>
+                    -->
+                  </div>
+              </div>
+          </div>
+
+            <div class="col-md-4 ">
+              <h4 align='center'>Manhattan</h4>
+                  <div class="portfolio-item awesome mix_all" data-cat="awesome" >
+                      <img style='height: 100%; width: 100%; object-fit: contain' src="assets/img/tour/manhattan.jpg" class="img-rectangle" alt="">
+<!--                       <img src="assets/img/tour/manhattan.jpg" class="img-responsive " alt="" />
+ -->                      <div class="overlay">
+                          <p>
+                              80 Centre St., New York, NY 10013
+                              <br>(212) 602-2800
+                              <br>
+                              <br><strong>Hours of Operation:</strong>
+                              <br>Monday through Friday
+                              <br>9:00 a.m. - 5:00 p.m.
+                              <br>
+                              <br><strong> Transportation</strong>
+                              <br>Subway: 4 5 6 to Brooklyn Bridge-City Hall
+                              <br>J Z to Chambers Street, N Q R to Canal Street, 1 2 3 A C to Chambers Street
+                              <br>Bus: M5, M9, M22, and M103
+                              <br><a style="padding-top:-30px;" (click)= "navigateManhattan()"> | Virtual Tour |</a> <a [routerLink]= "['manhattan']"></a>
+                            </p>
+
+                          <!--
+                          <a class="preview btn btn-info " title="Image Title Here" href="assets/img/portfolio/g.jpg"><i class="fa fa-plus fa-2x"></i></a>
+                        -->
+                      </div>
+                  </div>
+              </div>
+
+        <div class="col-md-4 ">
+          <h4 align='center'>Queens</h4>
+              <div class="portfolio-item awesome mix_all" data-cat="awesome" >
+                  <img style='height: 100%; width: 100%; object-fit: contain' src="assets/img/tour/queens.jpg" alt="" />
+                  <div class="overlay">
+                      <p>
+                          126-02 82nd Ave, Kew Gardens, NY 11415
+                          <br>(718) 575-4500
+                          <br>
+                          <br><strong>Hours of Operation:</strong>
+                          <br>Monday through Friday
+                          <br>9:00 a.m. - 5:00 p.m.
+                          <br>
+                          <br><strong> Transportation</strong>
+                          <br>Subway: E F to Kew Gardens-Union Turnpike
+                          <br>Bus: Q10, Q37, Q46, and Q60
+                          <br>
+                          <br> <a (click)= "navigateQueens()"> | Virtual Tour |</a> <a [routerLink]= "['queens']"></a>
+                          </p>
+                      
+                      
+                      <!--
+                      <a class="preview btn btn-info " title="Image Title Here" href="assets/img/portfolio/g.jpg"><i class="fa fa-plus fa-2x"></i></a>
+                    -->
+                  </div>
+              </div>
+          </div>
+
+
+          <div class="col-md-4 ">
+            <h4 align='center'>Staten Island</h4>
+                <div class="portfolio-item awesome mix_all" data-cat="awesome" >
+                    <img style='height: 100%; width: 100%; object-fit: contain' src="assets/img/tour/staten_island.jpg" alt= "Cinque Terre" height = "304" />
+                    <div class="overlay">
+                        <p>
+                            126 Stuyvesant Place Staten Island, NY 10301
+                            <br>(718) 697-4300
+                            <br>
+                            <br><strong>Hours of Operation:</strong>
+                            <br>Monday through Friday
+                            <br>9:00 a.m. - 5:00 p.m.
+                            <br>
+                            <br><strong> Transportation</strong>
+                            <br>Close to the St. George Ferry Terminal, Staten Island Railroad to St. George, Bus: S40, S42, S44, S46, S48, S51, S52, S61, S62, S66, S74, S76, S78, S81, S86, S90, S91, S92, S94, S96, and S98
+                            <br><a (click)= "navigateStaten()"> | Virtual Tour |</a> <a [routerLink]= "['staten']"></a>
+                            </p>
+
+                        <!--
+                        <a class="preview btn btn-info " title="Image Title Here" href="assets/img/portfolio/g.jpg"><i class="fa fa-plus fa-2x"></i></a>
+                      -->
+                    </div>
+                </div>
+            </div>
+
+
+      <!--   BUTTON<input type="button" class="view form-control" value="View" [hidden]="true" />
+
+ -->
+
+
+
+<!--         SHOW <input type= "checkbox" [(ngModel)] = "myVar">
+        <div ng-hide = "myVar">
+        <h1> WELCOME TO THE BRONX FAMILY JUSTICE CENTER</h1>
+        </div>
+Hide: <input type="checkbox" [(ngModel)]="checked" aria-label="Toggle ngHide"><br />
+<div class="check-element animate-show-hide" ng-hide="checked">
+  I hide when your checkbox is checked.
+</div> -->
+
+<!-- <style>#myDIV {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: lightblue;
+    margin-top:20px;
+}</style>
+<div id="myDIV">
+This is my DIV element.
+</div>
+
+<p><b>Note:</b> The element will not take up any space when the display property set to "none".</p>
+
+<script>
+function myFunction() {
+    var x = document.getElementById('myDIV');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+ -->
+
+ <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <hr />
+             <!--    <div style="text-align:right;padding:5px;">
+                    &copy;2017  Cornell Tech <a href="http://www.binarytheme.com/" style="color:#fff;" target="_blank" > </a>
+                </div> -->
+            </div>
+    </div>
+<div>
+<a name="book"></a>
+<!-- 
+<button (click)="showHide = !showHide">click</button>
+      <div id ="container" class="box" *ngIf="showHide">
+      <div class = "section">
+        <h1> <a name ="#bronx"> Welcome to the Bronx FJC Center! </a> </h1>
+        <img src= "assets/img/tour/bronx.jpg" width= 100% height= 100%>
+      </div>
+    </div> -->
+
+
+
+    <!-- <button class="filter-btn" (click)="filter.hidden = !filter.hidden">Category</button>
+<filterbox #filter [elements]="filters.categories> words</filterbox> -->
+ <!--    <div [ngClass]="{ 'hide': !ngShowVal }"> I'm Angular2 ngShow... </div>
+    <input butti
+    <div [ngClass]="{ 'hide': ngHideVal }"> I'm Angular2 ngHide... </div> -->
+
+
+     <!--FOOTER SECTION END-->
+      <!-- WE PUT SCRIPTS AT THE END TO LOAD PAGE FASTER-->
+
+    <!--CORE SCRIPTS PLUGIN-->
+
+    <script src="assets/js/jquery-1.11.1.min.js"></script>
+    <!--BOOTSTRAP SCRIPTS PLUGIN-->
+    <script src="assets/js/bootstrap.js"></script>
+     <!--WOW SCRIPTS PLUGIN-->
+    <script src="assets/js/wow.js"></script>
+     <!--FLEXSLIDER SCRIPTS PLUGIN-->
+    <script src="assets/js/jquery.flexslider.js"></script>
+     <!--PRETTY PHOTO FOR GALLERY -->
+    <script src="assets/js/jquery.prettyPhoto.js"></script>
+     <!--PHOTO FILTER -->
+    <script src="assets/js/jquery.mixitup.min.js"></script>
+     <!--CUSTOM SCRIPTS -->
+    <script src="assets/js/custom.js"></script>

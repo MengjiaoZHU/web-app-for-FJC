@@ -1,3 +1,89 @@
-<p>
-  faq works!
-</p>
+ <h1 class="head-line"> FAQ</h1>
+
+<!--  <div class="Qcontainer " > -->
+ 
+<button style="margin:auto; display:block; padding-left:30px; background-color:white; padding-bottom: 30px; 
+ border: 5px solid #8972F5;width:800px " (click)="showHideOne = !showHideOne"> <h3><strong> {{ titleOne }} </strong> </h3>
+</button><!-- </div> -->
+      <div class ="container" *ngIf="showHideOne">
+                <div class="just-txt-div text-align">
+                    <br>
+                    <br>
+                     <p>  {{ boxOne }} <br /><br /></p>
+                    </div>
+                     <!-- beautiful button -->
+                      <!-- <a class="btn btn-info btn-lg" href="#">Read More Here</a> -->
+                    <!-- &nbsp;&nbsp; -->
+                    <!-- <a class="btn btn-success btn-lg" href="#">Download Now </a> -->
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <button style="margin:auto; display:block; padding-left:30px; background-color:white; padding-bottom: 30px;
+        border: 5px solid #8972F5; width:800px" (click)="showHideTwo = !showHideTwo"> <h3><strong> {{ titleTwo }} </strong> </h3>
+        </button><!-- </div> -->
+      <div class ="container" *ngIf="showHideTwo">
+                <div class="just-txt-div text-align">
+                    <br>
+                    <br>
+                     <p>  {{ boxTwo }} <br /><br /></p>
+                    </div>
+                     <!-- beautiful button -->
+                      <!-- <a class="btn btn-info btn-lg" href="#">Read More Here</a> -->
+                    <!-- &nbsp;&nbsp; -->
+                    <!-- <a class="btn btn-success btn-lg" href="#">Download Now </a> -->
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+        <button style="margin:auto; display:block; padding-left:30px; background-color:white; padding-bottom: 30px;
+        border: 5px solid #8972F5; width:800px" (click)="showHideThree = !showHideThree"> <h3><strong> {{ titleThree }} </strong> </h3>
+        </button><!-- </div> -->
+      <div class ="container" *ngIf="showHideThree">
+                <div class="just-txt-div text-align">
+                    <br>
+                    <br>
+                     <p>  {{ boxThree }} <br /><br /></p>
+                    </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+        <button style="margin:auto; display:block; padding-left:30px; background-color:white; padding-bottom: 30px;
+        border: 5px solid #8972F5;width:800px" (click)="showHideFour = !showHideFour"> <h3><strong> {{ titleFour }} </strong> </h3>
+        </button><!-- </div> -->
+      <div class ="container" *ngIf="showHideFour">
+                <div class="just-txt-div text-align">
+                    <br>
+                    <br>
+                     <p>  {{ boxFour }} <br /><br /></p>
+                    </div>
+                    
+
+
+
+
+  <!--CORE SCRIPTS PLUGIN-->
+    <script src="assets/js/jquery-1.11.1.min.js"></script>
+     <!--BOOTSTRAP SCRIPTS PLUGIN-->
+    <script src="assets/js/bootstrap.js"></script>
+     <!--WOW SCRIPTS PLUGIN-->
+    <script src="assets/js/wow.js"></script>
+     <!--FLEXSLIDER SCRIPTS PLUGIN-->
+    <script src="assets/js/jquery.flexslider.js"></script>
+     <!--PRETTY PHOTO FOR GALLERY -->
+    <script src="assets/js/jquery.prettyPhoto.js"></script>
+     <!--PHOTO FILTER -->
+    <script src="assets/js/jquery.mixitup.min.js"></script>
+     <!--CUSTOM SCRIPTS -->
+    <script src="assets/js/custom.js"></script>
+

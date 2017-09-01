@@ -1,5 +1,5 @@
 <nav class="navbar navbar-default">
-      <div class="container">
+      <div class = "container" ng-controller = "MainController">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
@@ -7,27 +7,46 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">OCDV</a>
         </div>
+        
+
+
+
+
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-left">
-            <li [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"><a [routerLink]="['/']">Home</a></li>
-            <li [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"><a [routerLink]="['service_offered']">Service Offered</a></li>
-            <li [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"><a [routerLink]="['tour']">FJC Virtural Tour</a></li>
-            <li [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"><a [routerLink]="['tips']">Tech Safty Tips</a></li>
-            <li [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"><a [routerLink]="['testimonial']">Testimonial</a></li>
-            <li [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"><a [routerLink]="['prepare']">Prepare for your visit</a></li>
-            <li [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"><a [routerLink]="['faq']">FAQ</a></li>
+            
+            <li [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"><a [routerLink]="['/']"> {{ home }} </a></li>
+            <li [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"><a [routerLink]="['service_offered']"> {{ srvo }} </a></li>
+            <li [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"><a [routerLink]="['tour']"> {{ fjc }} </a></li>
+            <li [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"><a [routerLink]="['tips']"> {{ tech }} </a></li>
+            <li [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"><a [routerLink]="['testimonial']"> {{ test }} </a></li>
+            <li [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"><a [routerLink]="['prepare']"> {{ prepare }} </a></li>
+            <li [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"><a [routerLink]="['faq']"> {{ faq }} </a></li>
+
           </ul>
 
           <ul class="nav navbar-nav navbar-right">
-            <li *ngIf="authService.loggedIn()" [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"><a [routerLink]="['dashboard']">Dashboard</a></li>
-            <li *ngIf="authService.loggedIn()" [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"><a [routerLink]="['profile']">Profile</a></li>
+            <li *ngIf="authService.loggedIn()" [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"><a [routerLink]="['dashboard']"
+            >{{ dashboard }}</a></li>
+            <li *ngIf="authService.loggedIn()" [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"><a [routerLink]="['profile']"
+            >{{ profile }}</a></li>
 
-            <li *ngIf="!authService.loggedIn()" [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"><a [routerLink]="['login']">Login</a></li>
-            <li *ngIf="!authService.loggedIn()" [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"><a [routerLink]="['register']">Register</a></li>
-            <li *ngIf="authService.loggedIn()"><a (click)="onLogoutClick()" href="#">Logout</a></li>
+            <li *ngIf="!authService.loggedIn()" [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"><a [routerLink]="['login']"
+            >{{ login }}</a></li>
+            <li *ngIf="!authService.loggedIn()" [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"><a [routerLink]="['register']"
+            >{{ register }}</a></li>
+            <!-- new button-->
+          <!--   <li><button type= "button" ng-click="exit();" class= "btn btn-link"> Escape_2</button></li> -->
+            <li> <a id = escape  target= "Escape"  (click)= "exit()" >{{ escape }}</a></li>
+
+             <li *ngIf="authService.loggedIn()"><a (click)="onLogoutClick()" href="#">{{ logout }}</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
-    </nav>
+</nav>
+
+<!-- referencce to angular -->
+<script src= "https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<!-- referencce to source file, where modules are defined -->
+<script src= "navbar.js"></script>

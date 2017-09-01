@@ -394,7 +394,7 @@ Copyright (c) 2014 Daniel Eden
 
 /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 
-@-webkit-keyframes wobble {
+@-webkit-keyframes slideInbble {
   0% {
     -webkit-transform: none;
             transform: none;

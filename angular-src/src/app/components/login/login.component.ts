@@ -16,6 +16,9 @@ export class LoginComponent implements OnInit {
   			  private flashMessage: FlashMessagesService
   ) { }
 
+    un = 'Username';
+    pw = 'Password';
+
   ngOnInit() {
   }
 

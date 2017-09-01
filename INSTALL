@@ -1,0 +1,14 @@
+
+$ sudo apt-get instal mongodb npm nodejs 
+
+
+
+# TO run the static web-page 
+$ cd angular-src
+$ npm install
+$ ng serve --host <ip-address>
+
+# You can ignore the "--host <ip-address>" parameter, and test only from local IP.
+# Or, you can add the public IP of the server, so that it can be accessed from the external world.
+
+

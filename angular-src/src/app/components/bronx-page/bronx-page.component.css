@@ -1,0 +1,22 @@
+h1{
+	font-family: 'raleway' ,sans-serif, medium;
+	text-align: center;
+	color:rgba(116,97, 124, 1);
+
+}
+
+a{
+	font-family: 'raleway' medium, sans-serif;
+
+}
+
+img{
+	border: 3px solid;
+	color:#8972F5;
+}
+.container{
+  padding-right: 95px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}

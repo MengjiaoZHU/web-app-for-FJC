@@ -13,6 +13,14 @@ export class RegisterComponent implements OnInit {
 	username: String;
 	email: String;
 	password: String;
+  phone: String;
+
+  header = 'Already have an account?';
+  subtitle = 'Create your account';
+  usernm = 'Username';
+  mail = 'Email';
+  passwrd = 'Password';
+  phonenum = ' Phone';
 
 //anytime when use a service in the component, we need to inject 
   constructor(private validateService: ValidateService, 
@@ -27,7 +35,8 @@ export class RegisterComponent implements OnInit {
   	const user = {
   		username: this.username,
   		email: this.email,
-  		password: this.password
+  		password: this.password,
+      phone: this.phone
   	}
 
     //required fields
