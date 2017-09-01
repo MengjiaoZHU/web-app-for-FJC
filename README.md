@@ -58,7 +58,8 @@ The official document https://docs.mongodb.com/master/tutorial/install-mongodb-o
 **Run:**  
 
 * `sudo apt-get instal mongodb npm nodejs `
- To run the static web-page 
+
+To run the static web-page 
 * `$ cd angular-src`
 * `$ npm install`
 * `$ ng serve --host <ip-address>`
