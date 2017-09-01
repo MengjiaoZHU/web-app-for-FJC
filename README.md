@@ -1,14 +1,18 @@
-# web-app-for-FJC
+# OCDV Portal
 
-The goal of our OCDV project is to develop a web-app deployed on AWS. The technique stack is MEAN Stack, which represents for  "MongoDB", "Express", "AngularJS" and  "Node.js".
+OCDV Portal is a web-app made for The New York City Mayor's Office to Combat Domestic Violence (OCDV). It's currently deployed on AWS: http://ocdvportal.nyc/
+
+The technique stack is MEAN Stack, which represents for  "MongoDB", "Express", "AngularJS" and  "Node.js".
 
 **What we have:**  
   
-Currently, we have already implement a template front end design and a backend for register and login functions. As for the front end design, it is only basic HTML and CSS. For our backend, we implemented it in Node.js with Express and MongoDB, also we have a simple front end written in AngularJS.
+Currently, we have already implement a template front end design and a backend for register and login functions. The frontend is implemented with Angular 2. For our backend, we implemented it in Node.js with Express and MongoDB.
   
 _Front End:_  
-Our front end design is cuurently implemented in HTML/CSS and pure Javascript, no advance framework is being used. For now, our interface design contains mainly two parts, 1) The information pages that provide various resources and information that users might need, including locations of Family Justice Centers, testimonials, technology tips for using the app safely, etc. 
-2) The OCDV portal that users can log in, upload and manage their records of incidences, evidences of being abused, and keep track of their court days, etc.
+Our front end design is currently implemented with Angular 2. For now, our interface design contains mainly three parts, 1) The information pages that provide various resources and information that users might need, including locations of Family Justice Centers, testimonials, technology tips for using the app safely, etc. 
+2) The OCDV portal that users can log in, upload and manage their records of incidences, evidences of being abused, and keep track of their court days, etc. The portal is not fully functional yet within the newly deployed version on AWS. We'll fix that soon.
+
+3) Escape button: This function is to help users quickly close our website without any trace in case the abusers suddenly come. By clicking this button, user will be redirected to a new tab and redirects the old page to google to hide the browsing history.
 
 We are also working on a new design with improved user experience. This version is currently in prototype. Please contact Yan (yj334@cornell.edu) for more information.
 
@@ -32,22 +36,7 @@ This should be a button in "Profile" page.
 Show incoming appointments with FJC or attorney, also the events or activities held by FJC.  
 Should be worked as a reminder page, better to connect with personal calendar.  
 
-4.	*Escape function:*  
-This function is to help users quickly close our website without any trace in case their husband suddenly come. The button should be placed on a conspicuous position.  
-By clicking this button, user will be redirected to another website, such as google homepage and the "go back" button on the browser cannot be used. Also there won't be any record in browser history.  
- 
 We will have more user interaction functions which need to discussed with FJC.  
-
-**What Interns could do:**  
- 
-*For front end:*  
-1.	You could try to improve and finish our new interface design based on the feature lists and user stories.
-2.  You could try to implement the new prototype basing on our previous implementation in AngularJS, but with layouts revised and more features added. 
-
-*For back end:*  
-
-1.	You could try to make our front end in an angular form and plant our front end to our backend.  
-2.	You could try to implement either functions mentioned above based on your interests. If you don't have preference, my suggestion would be "4. Escape function"  
 
 **Install:**  
 
@@ -65,14 +54,16 @@ The official document https://docs.mongodb.com/master/tutorial/install-mongodb-o
 
 **Run:**  
 
-1.	Enter into "test_meanstack" folder  
-2.  Run "sudo mongod" in terminal  
-3.  Open a new terminal and run "mongo"  
-4.	Open another terminal and run "node app"  
-5.	Enter into "angular-src" folder  
-6.	Use another terminal window to run "ng serve"  
-7.	The node.js part is running on "localhost:3000"  
-The AngularJS part is running on "localhost:4200"  
+* `sudo apt-get instal mongodb npm nodejs `
+ To run the static web-page 
+* `$ cd angular-src`
+* `$ npm install`
+* `$ ng serve --host <ip-address>`
+You can ignore the "--host <ip-address>" parameter, and test only from local IP. Or, you can add the public IP of the server, so that it can be accessed from the external world.
+
+
+**To access web server::**  
+*	`ssh -i "~/.ssh/ocdv.pem" ubuntu@ec2-13-59-78-136.us-east-2.compute.amazonaws.com`
 
 **Explanation of this github repository:**  
 
